@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>AR Map Prototype</h2>
+<p>Press the button to check the map </p>
+<button onclick="map_data()">Map it</button>
+
+<p id="demo"></p>
+
+<script>
+function map_data() {
+    let x = prompt("Enter location");
+
+    if (x == "iloilo") {
+        window.open("https://www.google.com/maps/place/Iloilo+City,+Iloilo/@10.7299123,122.4783289,12z/data=!3m1!4b1!4m5!3m4!1s0x33aee56fe538d781:0xe8250cd6bc30a488!8m2!3d10.7201501!4d122.5621063"); 
+    } else {
+        document.getElementById("demo").innerHTML = "404!";
+    }
+}
+</script>
+
+</body>
+</html>
